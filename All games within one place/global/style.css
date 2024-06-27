@@ -1,0 +1,128 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+*{
+  margin: 0px;
+  overflow: -moz-hidden-unscrollable;
+}
+
+.topnav{
+  background-color:#313e50;
+  height: 15%;
+  width: 100%;
+}
+
+body{
+  background-color: #3a435e;
+}
+
+.topnav button{
+  font-family: Arial;
+  font-size: 15px;
+  color: #6c6f7f;
+  background: transparent;
+  border: 2px solid #3a435e;
+  width: fit-content;
+  height: 30%;
+  padding: 5px;
+  transition: 1s;
+  border-radius: 12px; 
+}
+
+.topnav button:hover{
+  background: inherit;
+  color: white;
+  border: 2px solid #6c6f7f;
+  cursor: pointer;
+}
+
+.maintag{
+  font-family: Arial;
+  font-size: 4vw;
+  text-align: center;
+  color: #6c6f7f;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-weight: bold;
+  -webkit-text-stroke-color: #5c6672;
+  -webkit-text-stroke-width: 1px;
+}
+
+.buttonbox3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align the buttons */
+  align-items: center;
+}
+
+.buttonbox3 button {
+  width: 150px; /* Set the width to make the buttons more square */
+  height: 150px; /* Set the height to make the buttons more square */
+  margin: 10px; /* Add margin for spacing */
+  text-align: center;
+  line-height: 150px; /* Center the text vertically in the button */
+  font-size: 3vw; /* Set the font size to scale with the button size */
+  overflow: hidden; /* Prevent text from going outside the button */
+  white-space: nowrap;  /* Prevent text from wrapping */
+  font-family: Arial;
+  color: #6c6f7f;
+  background: transparent;
+  border: 1px solid #6c6f7f;
+  border-radius: 12px; /* rounded buttons */
+}
+/* Set up specific positioning of the buttons for larger screens */
+.buttonbox3 button:nth-of-type(1) {
+  order: 1; /* top-left */
+}
+
+.buttonbox3 button:nth-of-type(2) {
+  order: 2; /* top-right */
+}
+
+.buttonbox3 button:nth-of-type(3) {
+  order: 3; /* bottom-left */
+}
+
+.buttonbox3 button:nth-of-type(4) {
+  order: 4; /* bottom-right */
+}
+
+@media (min-width: 768px) {
+  .buttonbox3 {
+    justify-content: space-between; /* Spread the buttons apart with space between */
+    margin-left: 10%; /* Set margin on the far left */
+    margin-right: 10%; /* Set margin on the far right */
+  }
+  .buttonbox3 button {
+    flex: 1 0 45%; /* Set the flex property to control the width of the buttons in the grid */
+  }
+}
+
+/* Media query to change the layout for smaller screens (e.g., mobile devices) */
+@media (max-width: 600px) {
+  .buttonbox3 {
+    flex-direction: column;
+  }
+
+  .buttonbox3 button {
+    flex-grow: 1;
+    margin: 5px;
+  }
+}
+
+
+
+.buttonbox3 button:hover{
+  background: #313e50;
+  color: #455561;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.buttonbox3 input{
+  margin-bottom: 5%
+} 
